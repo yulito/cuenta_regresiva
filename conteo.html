@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuenta regresiva</title>
+    <link rel="stylesheet" href="conteo.css">
+</head>
+<body class="fondo">
+    <div class="contenedor">
+        <div class="seleccion">
+            <select class="select" id="idMinutos">
+                <option selected disabled>Minutos</option>
+                <option value=60>1 min</option>
+                <option value=120>2 min</option>
+                <option value=180>3 min</option>
+                <option value=240>4 min</option>
+                <option value=300>5 min</option>
+            </select>
+        </div>
+        <div class="cuenta">
+            <div class="circulo">
+                <span class="conteo">...</span>
+            </div>
+        </div>
+        <div class="pausa">
+            <div class="btn btn1">Iniciar</div>
+            <div class="btn btn2">Formatear</div>
+        </div>
+    </div>
+
+    <script src="conteo.js"></script>
+</body>
+</html>

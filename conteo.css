@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+
+    font-family:'Orbitron', sans-serif;
+  }
+.fondo{
+    height: 100vh;
+    animation:cambiarColor1 4s ease infinite;
+}
+.fondoDos{
+    animation:cambiarColor2 4s ease infinite;
+}
+.contenedor{
+    height: 100vh;
+    width: 100%;    
+}
+
+@keyframes cambiarColor1{
+    0%{
+        background-color: rgb(228, 220, 65);
+    }
+    50%{
+        background-color: rgb(192, 188, 76);
+    }
+    100%{
+        background-color: rgb(228, 220, 65);
+    }
+}
+@keyframes cambiarColor2{
+    0%{
+        background-color: rgb(228, 136, 65);
+    }
+    50%{
+        background-color: rgb(228, 176, 65);
+    }
+    100%{
+        background-color: rgb(228, 136, 65);
+    }
+}
+.seleccion{
+    padding: 5%; 
+}
+.select{
+    height: 60px;
+    width: 200px;
+    background-color: rgba(63, 151, 63, 0.826);
+    border: 2px solid rgb(2, 71, 2);
+    border-radius: 8px;
+    font-size: 28px;
+    text-align: center;
+    color: rgb(2, 51, 2);
+}
+
+.cuenta{
+    margin-top: 40px;
+    height: 48%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+.circulo{
+    height: 300px;
+    width:300px;
+    background-color: rgb(21, 140, 205);
+    border: 8px solid blue;
+    border-radius: 50%;
+
+    text-align: center;
+    line-height: 290px;
+    font-size: 88px;
+    color: rgb(218, 225, 223);
+    animation:palpitar 2s ease infinite, colorGround 2s ease infinite;
+}
+.circuloFin{
+    border: 8px solid rgb(114, 6, 6);
+    animation:palpitar 2s ease infinite,colorGround2 2s ease infinite;
+}
+@keyframes palpitar{
+    0%{
+        height: 300px;
+        width:300px;
+        line-height: 290px;
+    }
+    50%{
+        height: 280px;
+        width:280px;
+        line-height: 270px;
+    }
+    100%{
+        height: 300px;
+        width:300px;
+        line-height: 290px;
+    }
+}
+@keyframes colorGround{
+    0%{
+        background-color: rgb(21, 140, 205);
+    }
+    50%{
+        background-color: rgb(14, 115, 169);
+    }
+    100%{
+        background-color: rgb(21, 140, 205);
+    }
+}
+@keyframes colorGround2{
+    0%{
+        background-color: rgb(205, 21, 21);
+    }
+    50%{
+        background-color: rgb(232, 48, 48);
+    }
+    100%{
+        background-color: rgb(205, 21, 21);
+    }
+}
+
+.pausa{
+    margin: 25px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+
+    justify-content: center;
+    align-items: center;
+}
+.btn{
+    height: 60px;
+    width: 180px;
+    margin: 4px;
+    border-radius: 8px;
+    border: 2px solid black;    
+    background-color: rgba(142, 166, 104, 0.808);
+    font-size: 28px;
+    text-align: center;
+    line-height: 60px;
+}
+.btn:hover{
+    background-color: rgb(76, 177, 54);
+}
+.btn:active{
+    background-color: rgb(40, 149, 16);
+}
